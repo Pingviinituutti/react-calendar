@@ -33,7 +33,7 @@ export default function WeekNumber({
         <div {...props}>
           {children}
           <span>
-            {tileContent({ date: date, view: 'week-number' })}
+            {tileContent({ date: date, view: 'week-number', weekNumber: weekNumber })}
           </span>
         </div>
       )
