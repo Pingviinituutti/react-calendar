@@ -5,6 +5,7 @@ export default function WeekNumber({
   date,
   onClickWeekNumber,
   weekNumber,
+  tileContent,
 }) {
   const props = {
     className: 'react-calendar__tile',
@@ -31,6 +32,9 @@ export default function WeekNumber({
       : (
         <div {...props}>
           {children}
+          <span>
+            {tileContent({ date: date, view: 'week-number' })}
+          </span>
         </div>
       )
   );

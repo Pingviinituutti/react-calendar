@@ -55,6 +55,7 @@ export default function MonthView(props) {
         onClickWeekNumber={onClickWeekNumber}
         onMouseLeave={onMouseLeave}
         showFixedNumberOfWeeks={showFixedNumberOfWeeks}
+        tileContent={childProps.tileContent}
       />
     );
   }

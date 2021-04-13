@@ -24,6 +24,7 @@ export default function WeekNumbers(props) {
     onClickWeekNumber,
     onMouseLeave,
     showFixedNumberOfWeeks,
+    tileContent,
   } = props;
 
   const numberOfWeeks = (() => {
@@ -70,6 +71,7 @@ export default function WeekNumbers(props) {
             date={dates[weekIndex]}
             onClickWeekNumber={onClickWeekNumber}
             weekNumber={weekNumber}
+            tileContent={tileContent}
           />
         ))
       }
